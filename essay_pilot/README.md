@@ -1,4 +1,4 @@
-[Testlink](cs-essay-design.html)
+[Testlink](cs-essay-text.html)
 ## textAnnotator
 
 Small and simple JS tool for making powerful underline, highlight and strike text annotations.
