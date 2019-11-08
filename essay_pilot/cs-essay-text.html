@@ -158,7 +158,8 @@
 
             <div>
                 <p style="display: inline">
-                  They covered the precious mahogany coffin with a brown amalgam of rocks, decomposed organisms, and weeds. It was my turn to take the shovel, but I felt too ashamed to dutifully send her off when I had not properly said goodbye. I refused to throw dirt on her. I refused to let go of my grandmother, to accept a death I had not seen coming, to believe that an illness could not only interrupt, but steal a beloved life.
+                  They covered the precious mahogany coffin with a brown amalgam of rocks, decomposed organisms, and weeds.
+                  It was my turn to take the shovel, but I felt too ashamed to dutifully send her off when I had not properly said goodbye. I refused to throw dirt on her. I refused to let go of my grandmother, to accept a death I had not seen coming, to believe that an illness could not only interrupt, but steal a beloved life.
                 </p>
                 <p>
                 When my parents finally revealed to me that my grandmother had been battling liver cancer, I was twelve and I was angry--mostly with myself. They had wanted to protect me--only six years old at the time--from the complex and morose concept of death. However, when the end inevitably arrived, I wasn’t trying to comprehend what dying was; I was trying to understand how I had been able to abandon my sick grandmother in favor of playing with friends and watching TV. Hurt that my parents had deceived me and resentful of my own oblivion, I committed myself to preventing such blindness from resurfacing.
@@ -223,6 +224,14 @@
             var finishedSection = document.getElementById("finished");
             finishedSection.style.display = "none";
 
+            // Only 4 pieces of evidence can be selected at a time
+            var limit = 4;
+            $('input.evidenceSelection').on('change', function(evt) {
+               if($("input[name='optionSelect']:checked").length > limit) {
+                   this.checked = false;
+               }
+            });
+            
             //Checkbox has to be selected in order to rank the evidence
             var $checkBoxA = $('#optionA'),
                 $checkBoxB = $('#optionB'),
@@ -297,13 +306,7 @@
                 }
             });
 
-            // Only 4 pieces of evidence can be selected at a time
-            var limit = 4;
-            $('input.evidenceSelection').on('change', function(evt) {
-               if($("input[name='optionSelect']:checked").length > limit) {
-                   this.checked = false;
-               }
-            });
+
             // Create buttons: Highlight text essay
             /*var highlightButton = document.createElement("button");
             var highlightButtonText = document.createTextNode("Highlight");

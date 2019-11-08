@@ -51,6 +51,8 @@
 
 .badevidence { background-color:red; }
 
+.neutralevidence { background-color:#fffdd0; }
+
 .goodevidence { background-color:green; }
 
 .tooltip {
