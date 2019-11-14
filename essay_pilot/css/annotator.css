@@ -91,3 +91,47 @@ table {
 td    {
 	padding: 6px;
 }
+
+.dot {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right:5px;
+  margin-top:5px;
+}
+
+.likertRank1 {
+  background-color: #d73027;
+}
+
+.likertRank2 {
+  background-color: #fc8d59;
+}
+
+.likertRank3 {
+  background-color: #fee08b;
+}
+
+.likertRank4 {
+  background-color: #ffffbf;
+}
+
+.likertRank5 {
+  background-color: #d9ef8b;
+}
+
+.likertRank6 {
+  background-color: #91cf60;
+}
+
+.likertRank7 {
+  background-color: #3fb572;
+}
+
+.greendot {
+  background-color: #08e800;
+}
+.graydot {
+  background-color: #636160;
+}
