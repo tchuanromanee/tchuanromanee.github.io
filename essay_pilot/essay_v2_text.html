@@ -92,78 +92,134 @@
                             Selected evidence will appear here (only 4 maximum). They will be listed and an dropdown for each will appear to rank the 4.
                           </p>
                           Evidence selected:
-                          <p id="evidenceASel" style="display:none">
-                            <select id ="rankingA" class ="rankingSelect">
-                              <option value="1">1 (most helpful)</option>
-                              <option value="2">2</option>
-                              <option value="3">3</option>
-                              <option value="4">4 (least helpful)</option>
-                            </select>
-                            They covered the precious mahogany coffin with a brown amalgam of rocks, decomposed organisms, and weeds.
-                          </p>
-                          <p id="evidenceBSel" style="display:none">
-                            <select id ="rankingH" class ="rankingSelect">
-                              <option value="1">1 (most helpful)</option>
-                              <option value="2">2</option>
-                              <option value="3">3</option>
-                              <option value="4">4 (least helpful)</option>
-                            </select>
-                            Cancer, as powerful and invincible as it may seem, is a mere fraction of a person’s life. It’s easy to forget when one’s mind and body are so weak and vulnerable.
-                          </p>
-                          <p id="evidenceCSel" style="display:none">
-                            <select id ="rankingH" class ="rankingSelect">
-                              <option value="1">1 (most helpful)</option>
-                              <option value="2">2</option>
-                              <option value="3">3</option>
-                              <option value="4">4 (least helpful)</option>
-                            </select>
-                              Before I could resolve my guilt, I had to broaden my perspective of the world as well as my responsibilities to my fellow humans.
-                          </p>
-                          <p id="evidenceDSel" style="display:none">
-                            <select id ="rankingH" class ="rankingSelect">
-                              <option value="1">1 (most helpful)</option>
-                              <option value="2">2</option>
-                              <option value="3">3</option>
-                              <option value="4">4 (least helpful)</option>
-                            </select>
-                            The student has exceptional SAT test scores, scoring a 1540 out of 1600 points.
-                          </p>
-                          <p id="evidenceESel" style="display:none">
-                            <select id ="rankingH" class ="rankingSelect">
-                              <option value="1">1 (most helpful)</option>
-                              <option value="2">2</option>
-                              <option value="3">3</option>
-                              <option value="4">4 (least helpful)</option>
-                            </select>
-                            The student's classes are a little less rigorous than their peers'.
-                          </p>
-                          <p id="evidenceFSel" style="display:none">
-                            <select id ="rankingH" class ="rankingSelect">
-                              <option value="1">1 (most helpful)</option>
-                              <option value="2">2</option>
-                              <option value="3">3</option>
-                              <option value="4">4 (least helpful)</option>
-                            </select>
-                            The student has volunteered in many different organizations but is not consistent, staying at each place for only a few months at a time.
-                          </p>
-                          <p id="evidenceGSel" style="display:none">
-                            <select id ="rankingH" class ="rankingSelect">
-                              <option value="1">1 (most helpful)</option>
-                              <option value="2">2</option>
-                              <option value="3">3</option>
-                              <option value="4">4 (least helpful)</option>
-                            </select>
-                            The student has a GPA of 3.35 of 4. This is a mediocre GPA for a student of this background and typical of students applying.
-                          </p>
-                          <p id="evidenceHSel" style="display:none">
-                            <select id ="rankingH" class ="rankingSelect">
-                              <option value="1">1 (most helpful)</option>
-                              <option value="2">2</option>
-                              <option value="3">3</option>
-                              <option value="4">4 (least helpful)</option>
-                            </select>
-                            The student should have taken more AP classes, since they have taken only 2 classes during all 4 years of high school.</li>
-                          </p>
+                          <br />
+                          <table cellpadding="10">
+                            <tbody>
+                              <tr>
+                                <td><strong>ID of evidence</strong></td>
+                                <td><strong>Ranking of top four pieces of evidence</strong></td>
+                                <td><strong>Measure of supportiveness (7) to non-supportiveness (1) of hypothesis</strong></td>
+                                <td><strong>Evidence</strong></td>
+                              </tr>
+                              <tr id = "evidenceASel" style="display:none;">
+                                <td>a.</td>
+                                <td>
+                                  <select id ="rankingA" class ="rankingSelect">
+                                    <option value="1">1 (most helpful)</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4 (least helpful)</option>
+                                  </select>
+                                </td>
+                                <td>6.5</td>
+                                <td><br />They covered the precious mahogany coffin with a brown amalgam of rocks, decomposed organisms, and weeds.</td>
+                              </tr>
+                              <tr id = "evidenceBSel" style="display:none;">
+                                <td>b.</td>
+                                <td>
+                                  <select id ="rankingB" class ="rankingSelect">
+                                    <option value="1">1 (most helpful)</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4 (least helpful)</option>
+                                  </select>
+                                </td>
+                                <td>6</td>
+                                <td><br />Cancer, as powerful and invincible as it may seem, is a mere fraction of a person’s life. It’s easy to forget when one’s mind and body are so weak and vulnerable.
+                                </td>
+                              </tr>
+                              <tr id = "evidenceCSel" style="display:none;">
+                                <td>c.</td>
+                                <td>
+                                  <select id ="rankingC" class ="rankingSelect">
+                                    <option value="1">1 (most helpful)</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4 (least helpful)</option>
+                                  </select>
+                                </td>
+                                <td>5</td>
+                                <td><br />
+                                  Before I could resolve my guilt, I had to broaden my perspective of the world as well as my responsibilities to my fellow humans.
+                                </td>
+                              </tr>
+                              <tr id = "evidenceDSel" style="display:none;">
+                                <td>d.</td>
+                                <td>
+                                  <select id ="rankingD" class ="rankingSelect">
+                                    <option value="1">1 (most helpful)</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4 (least helpful)</option>
+                                  </select>
+                                </td>
+                                <td>6</td>
+                                <td><br />
+                                  The student has exceptional SAT test scores, scoring a 1540 out of 1600 points.
+                                </td>
+                              </tr>
+                              <tr id = "evidenceESel" style="display:none;">
+                                <td>e.</td>
+                                <td>
+                                  <select id ="rankingE" class ="rankingSelect">
+                                    <option value="1">1 (most helpful)</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4 (least helpful)</option>
+                                  </select>
+                                </td>
+                                <td>3</td>
+                                <td><br />
+                                  The student's classes are a little less rigorous than their peers'.
+                                </td>
+                              </tr>
+                              <tr id = "evidenceFSel" style="display:none;">
+                                <td>f.</td>
+                                <td><br />
+                                  <select id ="rankingF" class ="rankingSelect">
+                                    <option value="1">1 (most helpful)</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4 (least helpful)</option>
+                                  </select>
+                                </td>
+                                <td>2</td>
+                                <td><br />
+                                  The student has volunteered in many different organizations but is not consistent, staying at each place for only a few months at a time.
+                                </td>
+                              </tr>
+                              <tr id = "evidenceGSel" style="display:none;">
+                                <td>g.</td>
+                                <td>
+                                  <select id ="rankingG" class ="rankingSelect">
+                                    <option value="1">1 (most helpful)</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4 (least helpful)</option>
+                                  </select>
+                                </td>
+                                <td>3</td>
+                                <td><br />
+                                  The student has a GPA of 3.35 of 4. This is a mediocre GPA for a student of this background and typical of students applying.
+                                </td>
+                              </tr>
+                              <tr id = "evidenceHSel" style="display:none;">
+                                <td>h.</td>
+                                <td>
+                                  <select id ="rankingH" class ="rankingSelect">
+                                    <option value="1">1 (most helpful)</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4 (least helpful)</option>
+                                  </select>
+                                </td>
+                                <td>3</td>
+                                <td><br />
+                                  The student should have taken more AP classes, since they have taken only 2 classes during all 4 years of high school.
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
                         </div>
                       </div>
                     </div>
@@ -255,6 +311,10 @@
             var $body = $(document.body);
             var essay = document.getElementById("evaluation");
             var firstRated = false;
+
+            //  Hide table rows
+            var rowA = document.getElementById("evidenceASel");
+
             // Hide subsequent sections
             var firstRateSection = document.getElementById("firstRate");
             firstRateSection.style.display = "none";
@@ -287,7 +347,7 @@
 
               // If the checkbox is checked, display the output text
               if (checkBox.checked == true){
-                text.style.display = "block";
+                text.style.display = "";
               } else {
                 text.style.display = "none";
               }
@@ -302,7 +362,7 @@
 
               // If the checkbox is checked, display the output text
               if (checkBox.checked == true){
-                text.style.display = "block";
+                text.style.display = "";
               } else {
                 text.style.display = "none";
               }
@@ -317,7 +377,7 @@
 
               // If the checkbox is checked, display the output text
               if (checkBox.checked == true){
-                text.style.display = "block";
+                text.style.display = "";
               } else {
                 text.style.display = "none";
               }
@@ -332,7 +392,7 @@
 
               // If the checkbox is checked, display the output text
               if (checkBox.checked == true){
-                text.style.display = "block";
+                text.style.display = "";
               } else {
                 text.style.display = "none";
               }
@@ -347,7 +407,7 @@
 
               // If the checkbox is checked, display the output text
               if (checkBox.checked == true){
-                text.style.display = "block";
+                text.style.display = "";
               } else {
                 text.style.display = "none";
               }
@@ -362,7 +422,7 @@
 
               // If the checkbox is checked, display the output text
               if (checkBox.checked == true){
-                text.style.display = "block";
+                text.style.display = "";
               } else {
                 text.style.display = "none";
               }
@@ -377,7 +437,7 @@
 
               // If the checkbox is checked, display the output text
               if (checkBox.checked == true){
-                text.style.display = "block";
+                text.style.display = "";
               } else {
                 text.style.display = "none";
               }
@@ -392,7 +452,7 @@
 
               // If the checkbox is checked, display the output text
               if (checkBox.checked == true){
-                text.style.display = "block";
+                text.style.display = "";
               } else {
                 text.style.display = "none";
               }
