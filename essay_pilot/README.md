@@ -1,5 +1,8 @@
 [C&S Text only](cs-essay-text.html)
+
 [Design 2 Text only](essay_v2_text.html)
+
+[Design 2 Vis](essay_v2_vis.html)
 ## textAnnotator
 
 Small and simple JS tool for making powerful underline, highlight and strike text annotations.
