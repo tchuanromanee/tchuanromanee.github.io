@@ -2,6 +2,8 @@
 
 [Design 2 Text only](essay_v2_text.html)
 
+[C&S Vis](cs-essay-vis.html)
+
 [Design 2 Vis](essay_v2_vis.html)
 ## textAnnotator
 
