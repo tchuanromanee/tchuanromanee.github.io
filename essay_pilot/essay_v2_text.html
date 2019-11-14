@@ -27,11 +27,11 @@
                             <div class="well">
                               <strong>Academic Summary</strong>
                               <br />
-                              <input type="checkbox" id="optionE" name ="optionSelect" class ="evidenceSelection"/>
+                              <input type="checkbox" id="optionE" name ="optionSelect" class ="evidenceSelection" onclick="eSelected()"/>
                               <span data-toggle="tooltip" data-html="true" title="Supportive: 3">
                               The student's classes are a little less rigorous than their peers'.</span>
                               <br />
-                              <input type="checkbox" id="optionG" name ="optionSelect" class ="evidenceSelection"/>
+                              <input type="checkbox" id="optionG" name ="optionSelect" class ="evidenceSelection" onclick="gSelected()"/>
                               <span data-toggle="tooltip" data-html="true" title="Supportive: 3">
                                 The student has a GPA of 3.35 of 4. This is a mediocre GPA for a student of this background and typical of students applying.
                               </span>
@@ -41,7 +41,7 @@
                             <div class="well">
                               <strong>Extracurriculars</strong>
                               <br />
-                              <input type="checkbox" id="optionF" name ="optionSelect" class ="evidenceSelection"/>
+                              <input type="checkbox" id="optionF" name ="optionSelect" class ="evidenceSelection" onclick="fSelected()"/>
                               <span data-toggle="tooltip" data-html="true" title="Supportive: 2">
                                 The student has volunteered in many different organizations but is not consistent, staying at each place for only a few months at a time.
                               </span>
@@ -53,20 +53,35 @@
                             <div class="well">
                               <strong>Testing</strong>
                               <br />
-                              <input type="checkbox" id="optionD" name ="optionSelect" class ="evidenceSelection"/>
+                              <input type="checkbox" id="optionD" name ="optionSelect" class ="evidenceSelection" onclick="dSelected()"/>
                               <span data-toggle="tooltip" data-html="true" title="Supportive: 3">
-                                The student has exceptional SAT test scores, scoring a 1540 out of 1600 points.</li>
+                                The student has exceptional SAT test scores, scoring a 1540 out of 1600 points.
                               </span>
                               <br />
                               <input type="checkbox" id="optionH" name ="optionSelect" class ="evidenceSelection" onclick="hSelected()"/>
                               <span data-toggle="tooltip" data-html="true" title="Supportive: 3">
-                                The student should have taken more AP classes, since they have taken only 2 classes during all 4 years of high school.</li>
+                                The student should have taken more AP classes, since they have taken only 2 classes during all 4 years of high school.
                               </span>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="well">
-                              Other evidence
+                              <strong>Essay Highlights</strong>
+                              <br />
+                              <input type="checkbox" id="optionA" name ="optionSelect" class ="evidenceSelection" onclick="aSelected()"/>
+                              <span data-toggle="tooltip" data-html="true" title="Supportive: 6.5">
+                                They covered the precious mahogany coffin with a brown amalgam of rocks, decomposed organisms, and weeds.
+                              </span>
+                              <br />
+                              <input type="checkbox" id="optionB" name ="optionSelect" class ="evidenceSelection" onclick="bSelected()"/>
+                              <span data-toggle="tooltip" data-html="true" title="Supportive: 6">
+                                Cancer, as powerful and invincible as it may seem, is a mere fraction of a person’s life. It’s easy to forget when one’s mind and body are so weak and vulnerable.
+                              </span>
+                              <br />
+                              <input type="checkbox" id="optionC" name ="optionSelect" class ="evidenceSelection" onclick="cSelected()"/>
+                              <span data-toggle="tooltip" data-html="true" title="Supportive: 5">
+                                Before I could resolve my guilt, I had to broaden my perspective of the world as well as my responsibilities to my fellow humans.
+                              </span>
                             </div>
                         </div>
                     </div>
@@ -77,6 +92,69 @@
                             Selected evidence will appear here (only 4 maximum). They will be listed and an dropdown for each will appear to rank the 4.
                           </p>
                           Evidence selected:
+                          <p id="evidenceASel" style="display:none">
+                            <select id ="rankingA" class ="rankingSelect">
+                              <option value="1">1 (most helpful)</option>
+                              <option value="2">2</option>
+                              <option value="3">3</option>
+                              <option value="4">4 (least helpful)</option>
+                            </select>
+                            They covered the precious mahogany coffin with a brown amalgam of rocks, decomposed organisms, and weeds.
+                          </p>
+                          <p id="evidenceBSel" style="display:none">
+                            <select id ="rankingH" class ="rankingSelect">
+                              <option value="1">1 (most helpful)</option>
+                              <option value="2">2</option>
+                              <option value="3">3</option>
+                              <option value="4">4 (least helpful)</option>
+                            </select>
+                            Cancer, as powerful and invincible as it may seem, is a mere fraction of a person’s life. It’s easy to forget when one’s mind and body are so weak and vulnerable.
+                          </p>
+                          <p id="evidenceCSel" style="display:none">
+                            <select id ="rankingH" class ="rankingSelect">
+                              <option value="1">1 (most helpful)</option>
+                              <option value="2">2</option>
+                              <option value="3">3</option>
+                              <option value="4">4 (least helpful)</option>
+                            </select>
+                              Before I could resolve my guilt, I had to broaden my perspective of the world as well as my responsibilities to my fellow humans.
+                          </p>
+                          <p id="evidenceDSel" style="display:none">
+                            <select id ="rankingH" class ="rankingSelect">
+                              <option value="1">1 (most helpful)</option>
+                              <option value="2">2</option>
+                              <option value="3">3</option>
+                              <option value="4">4 (least helpful)</option>
+                            </select>
+                            The student has exceptional SAT test scores, scoring a 1540 out of 1600 points.
+                          </p>
+                          <p id="evidenceESel" style="display:none">
+                            <select id ="rankingH" class ="rankingSelect">
+                              <option value="1">1 (most helpful)</option>
+                              <option value="2">2</option>
+                              <option value="3">3</option>
+                              <option value="4">4 (least helpful)</option>
+                            </select>
+                            The student's classes are a little less rigorous than their peers'.
+                          </p>
+                          <p id="evidenceFSel" style="display:none">
+                            <select id ="rankingH" class ="rankingSelect">
+                              <option value="1">1 (most helpful)</option>
+                              <option value="2">2</option>
+                              <option value="3">3</option>
+                              <option value="4">4 (least helpful)</option>
+                            </select>
+                            The student has volunteered in many different organizations but is not consistent, staying at each place for only a few months at a time.
+                          </p>
+                          <p id="evidenceGSel" style="display:none">
+                            <select id ="rankingH" class ="rankingSelect">
+                              <option value="1">1 (most helpful)</option>
+                              <option value="2">2</option>
+                              <option value="3">3</option>
+                              <option value="4">4 (least helpful)</option>
+                            </select>
+                            The student has a GPA of 3.35 of 4. This is a mediocre GPA for a student of this background and typical of students applying.
+                          </p>
                           <p id="evidenceHSel" style="display:none">
                             <select id ="rankingH" class ="rankingSelect">
                               <option value="1">1 (most helpful)</option>
@@ -95,7 +173,7 @@
                       <h2>Essay</h2>
                       <div>
                         <p id='p2' style="display: inline">
-                          <input type="checkbox" id="optionA" name ="optionSelect" class ="evidenceSelection"/><span class="neutralevidence" data-toggle="tooltip" data-html="true" title="Supportive: 6.5 <br /> Good vocabulary">They covered the precious mahogany coffin with a brown amalgam of rocks, decomposed organisms, and weeds.</span>
+                        <span class="neutralevidence">They covered the precious mahogany coffin with a brown amalgam of rocks, decomposed organisms, and weeds.</span>
                          They covered the precious mahogany coffin with a brown amalgam of rocks, decomposed organisms, and weeds. It was my turn to take the shovel, but I felt too ashamed to dutifully send her off when I had not properly said goodbye. I refused to throw dirt on her. I refused to let go of my grandmother, to accept a death I had not seen coming, to believe that an illness could not only interrupt, but steal a beloved life.
                        </p>
                        <p>
@@ -106,13 +184,13 @@
                        </p>
                        <p>
                        However, a simple walk on a hiking trail behind my house made me open my own eyes to the truth. Over the years, everything--even honoring my grandmother--had become second to school and grades. As my shoes humbly tapped against the Earth, the towering trees blackened by the forest fire a few years ago, the faintly colorful pebbles embedded in the sidewalk, and the wispy white clouds hanging in the sky reminded me of my small though nonetheless significant part in a larger whole that is humankind and this Earth.
-                       <input type="checkbox" id="optionC" name ="optionSelect" class ="evidenceSelection"/><span class="neutralevidence" data-toggle="tooltip" data-html="true" title="Supportive: 6.5 <br /> Emotion: anger, joy, sadness">Before I could resolve my guilt, I had to broaden my perspective of the world as well as my responsibilities to my fellow humans.</span>
+                       <span class="neutralevidence">Before I could resolve my guilt, I had to broaden my perspective of the world as well as my responsibilities to my fellow humans.</span>
                        </p>
                        <p>
                        Volunteering at a cancer treatment center has helped me discover my path. When I see patients trapped in not only the hospital but also a moment in time by their diseases, I talk to them. For six hours a day, three times a week, Ivana is surrounded by IV stands, empty walls, and busy nurses that quietly yet constantly remind her of her breast cancer. Her face is pale and tired, yet kind--not unlike my grandmother’s. I need only to smile and say hello to see her brighten up as life returns to her face. Upon our first meeting, she opened up about her two sons, her hometown, and her knitting group--no mention of her disease. Without even standing up, the three of us—Ivana, me, and my grandmother--had taken a walk together.
                        </p>
                        <p>
-                       <input type="checkbox" id="optionB" name ="optionSelect" class ="evidenceSelection"/><span class="neutralevidence" data-toggle="tooltip" data-html="true" title="Supportive: 6.5 <br /> Sentiment: Positive, 91.7%">Cancer, as powerful and invincible as it may seem, is a mere fraction of a person’s life. It’s easy to forget when one’s mind and body are so weak and vulnerable.</span> I want to be there as an oncologist to remind them to take a walk once in a while, to remember that there’s so much more to life than a disease. While I physically treat their cancer, I want to lend patients emotional support and mental strength to escape the interruption and continue living. Through my work, I can accept the shovel without burying my grandmother’s memory.
+                       <span class="neutralevidence">Cancer, as powerful and invincible as it may seem, is a mere fraction of a person’s life. It’s easy to forget when one’s mind and body are so weak and vulnerable.</span> I want to be there as an oncologist to remind them to take a walk once in a while, to remember that there’s so much more to life than a disease. While I physically treat their cancer, I want to lend patients emotional support and mental strength to escape the interruption and continue living. Through my work, I can accept the shovel without burying my grandmother’s memory.
                        </p>
                       </div>
                         <br/>
@@ -200,6 +278,111 @@
                }
             });
 
+            function aSelected() {
+              // Get the checkbox
+              var checkBox = document.getElementById("optionA");
+              // Get the output text
+              var text = document.getElementById("evidenceASel");
+              console.log(checkBox)
+
+              // If the checkbox is checked, display the output text
+              if (checkBox.checked == true){
+                text.style.display = "block";
+              } else {
+                text.style.display = "none";
+              }
+            }
+
+            function bSelected() {
+              // Get the checkbox
+              var checkBox = document.getElementById("optionB");
+              // Get the output text
+              var text = document.getElementById("evidenceBSel");
+              console.log(checkBox)
+
+              // If the checkbox is checked, display the output text
+              if (checkBox.checked == true){
+                text.style.display = "block";
+              } else {
+                text.style.display = "none";
+              }
+            }
+
+            function cSelected() {
+              // Get the checkbox
+              var checkBox = document.getElementById("optionC");
+              // Get the output text
+              var text = document.getElementById("evidenceCSel");
+              console.log(checkBox)
+
+              // If the checkbox is checked, display the output text
+              if (checkBox.checked == true){
+                text.style.display = "block";
+              } else {
+                text.style.display = "none";
+              }
+            }
+
+            function dSelected() {
+              // Get the checkbox
+              var checkBox = document.getElementById("optionD");
+              // Get the output text
+              var text = document.getElementById("evidenceDSel");
+              console.log(checkBox)
+
+              // If the checkbox is checked, display the output text
+              if (checkBox.checked == true){
+                text.style.display = "block";
+              } else {
+                text.style.display = "none";
+              }
+            }
+
+            function eSelected() {
+              // Get the checkbox
+              var checkBox = document.getElementById("optionE");
+              // Get the output text
+              var text = document.getElementById("evidenceESel");
+              console.log(checkBox)
+
+              // If the checkbox is checked, display the output text
+              if (checkBox.checked == true){
+                text.style.display = "block";
+              } else {
+                text.style.display = "none";
+              }
+            }
+
+            function fSelected() {
+              // Get the checkbox
+              var checkBox = document.getElementById("optionF");
+              // Get the output text
+              var text = document.getElementById("evidenceFSel");
+              console.log(checkBox)
+
+              // If the checkbox is checked, display the output text
+              if (checkBox.checked == true){
+                text.style.display = "block";
+              } else {
+                text.style.display = "none";
+              }
+            }
+
+            function gSelected() {
+              // Get the checkbox
+              var checkBox = document.getElementById("optionG");
+              // Get the output text
+              var text = document.getElementById("evidenceGSel");
+              console.log(checkBox)
+
+              // If the checkbox is checked, display the output text
+              if (checkBox.checked == true){
+                text.style.display = "block";
+              } else {
+                text.style.display = "none";
+              }
+            }
+
             function hSelected() {
               // Get the checkbox
               var checkBox = document.getElementById("optionH");
@@ -216,11 +399,11 @@
             }
 
             // Create buttons: Highlight text essay
-            var highlightButton = document.createElement("button");
-            var highlightButtonText = document.createTextNode("Highlight");
-            highlightButton.appendChild(highlightButtonText);
-            highlightButton.setAttribute("id", "highlightButton");
-            essay.appendChild(highlightButton);
+            //var highlightButton = document.createElement("button");
+            //var highlightButtonText = document.createTextNode("Highlight");
+            //highlightButton.appendChild(highlightButtonText);
+            //highlightButton.setAttribute("id", "highlightButton");
+            //essay.appendChild(highlightButton);
 
             // Create button: next button after highlight is done
             var nextButtonRate = document.createElement("button");
@@ -265,7 +448,7 @@
             document.getElementById("secondRate").appendChild(ratingSubmitButton2)
             ratingSubmitButton2.onclick = submitSecondEssayRating;
 
-            function createCtrl2(title, clickHandler) {
+            /*function createCtrl2(title, clickHandler) {
               highlightButton.onclick = function() {
 				            //getSelectionText();
                     //node.setAttribute("id", highlightCount.toString());
@@ -279,7 +462,7 @@
 
             }
             createCtrl2('highlight', u.highlightSelected);
-
+            */
             //If the highlighted text is clicked on, it will be removed
             $body.on('click', '.tvs-annotated-text, .tvs-annotate-element', function(e) {
             u.unannotateElement(this);
