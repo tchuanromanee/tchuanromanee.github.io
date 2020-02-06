@@ -3,6 +3,32 @@ body {
   font-family: Arial;
 }
 
+.navbar {
+  background: transparent !important;
+}
+
+@media (max-width: 991px) {
+  .navbar:not(.top-nav-collapse) {
+    background: #78909c !important;
+  }
+}
+
+.maincontent {
+  background-color: white;
+}
+
+.headerbg {
+  background-image: url("https://mdbootstrap.com/img/Photos/Horizontal/Nature/full page/img(11).jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.mainheader{
+  font-family: Arial;
+  font-size: 28pt;
+}
+
 .myinput[type="checkbox"]:before {
   position: relative;
   display: block;
