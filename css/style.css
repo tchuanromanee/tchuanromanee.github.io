@@ -5,6 +5,10 @@ body {
   font-size: 14pt;
 }
 
+#socialLinks {
+  text-align: center;
+}
+
 .navbar {
       background: transparent !important; /* NON-IE */
     -webkit-transition: all 0.6s ease-out;

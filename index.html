@@ -27,6 +27,9 @@
                       <li class="nav-item">
                         <a class="nav-link" id="projectsLink">Other Projects</a>
                       </li>
+                      <li class="nav-item">
+                        <a class="nav-link" id="writingsLink">Writing</a>
+                      </li>
                     </ul>
                   </div>
 
@@ -39,7 +42,7 @@
             </nav>
             <!-- Navbar -->
             <!-- Full Page Intro -->
-            <div class="view h-50 rellax" data-rellax-speed="7" style="background-image: url('sea-bg.jpg'); background-repeat: none; background-size: cover; background-position: center center;">
+            <div class="view h-75 rellax" data-rellax-speed="2" style="background-image: url('sea-bg.jpg'); background-repeat: none; background-size: cover; background-position: center center;">
               <!-- Mask & flexbox options-->
               <div class="mask rgba-black-light align-items-center">
                 <!-- Content -->
@@ -72,6 +75,9 @@
   Welcome to Tee Chuanromanee's web page.
   <p>
     I’m a second year PhD student working in the HCI Lab at Notre Dame under Dr. Ron Metoyer.
+  </p>
+  <p>
+    My pronouns are they/them.
   </p>
   </section>
 
@@ -126,6 +132,20 @@ Holistic admissions is a complex and subjective decision making domain in which 
       Campus-wide online forum for students to discuss issues of day-to-day life. Developed in conjunction with Cole Heathcock, Tyler Craig, George Reeves, and Andrew Cicchinelli as part of Web Software Tools term project using HTML/CSS, PHP, and MySQL.
 
   </section>
+
+  <section id="writingsPage" style="display:none">
+    I also write in my spare time. Here are some articles I've written:
+    <ul>
+      <li><a href="http://irish4reprohealth.org/2020/02/19/four-lessons-i-learned-from-recovering-from-purity-culture/">Four Lessons I Learned From Recovering from Purity Culture</a> - Irish 4 Reproductive Health Blog</li>
+    </ul>
+  </section>
+
+  <hr>
+  <div id="socialLinks">
+    <a href="https://twitter.com/chuanromanee?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @chuanromanee</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> &nbsp;
+    <!-- Place this tag where you want the button to render. -->
+<a class="github-button" href="https://github.com/tchuanromanee" aria-label="Follow @tchuanromanee on GitHub">Follow @tchuanromanee</a>
+  </div>
 </div>
 </main>
 <script>
@@ -139,6 +159,7 @@ Holistic admissions is a complex and subjective decision making domain in which 
   var aboutPage = document.getElementById("aboutPage");
   var researchPage = document.getElementById("researchPage");
   var projectsPage = document.getElementById("projectsPage");
+  var writingsPage = document.getElementById("writingsPage");
 
   var homeLink = document.getElementById("homeLink");
   homeLink.onclick = showHome;
@@ -148,12 +169,15 @@ Holistic admissions is a complex and subjective decision making domain in which 
   projectsLink.onclick = showProjects;
   var researchLink = document.getElementById("researchLink");
   researchLink.onclick = showResearch;
+  var writingsLink = document.getElementById("writingsLink");
+  writingsLink.onclick = showWriting;
 
   function showHome() {
     homePage.style.display = "block";
     aboutPage.style.display = "none";
     researchPage.style.display = "none";
     projectsPage.style.display = "none";
+    writingsPage.style.display = "none";
   }
 
   function showAbout() {
@@ -161,13 +185,16 @@ Holistic admissions is a complex and subjective decision making domain in which 
     aboutPage.style.display = "block";
     researchPage.style.display = "none";
     projectsPage.style.display = "none";
+    writingsPage.style.display = "none";
   }
 
   function showResearch() {
+    console.log("research shown")
     homePage.style.display = "none";
     aboutPage.style.display = "none";
     researchPage.style.display = "block";
     projectsPage.style.display = "none";
+    writingsPage.style.display = "none";
   }
 
   function showProjects() {
@@ -175,6 +202,16 @@ Holistic admissions is a complex and subjective decision making domain in which 
     aboutPage.style.display = "none";
     researchPage.style.display = "none";
     projectsPage.style.display = "block";
+    writingsPage.style.display = "none";
+  }
+  function showWriting() {
+
+      console.log("writings shown")
+    homePage.style.display = "none";
+    aboutPage.style.display = "none";
+    researchPage.style.display = "none";
+    projectsPage.style.display = "none";
+    writingsPage.style.display = "block";
   }
 
   /**
@@ -196,4 +233,6 @@ if($('.navbar').length > 0){
     });
 }
 </script>
+<!-- Place this tag in your head or just before your close body tag. -->
+<script async defer src="https://buttons.github.io/buttons.js"></script>
 </body>
