@@ -32,7 +32,7 @@
                         <a class="nav-link" id="projectsLink">Other Projects</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" id="writingsLink">Writing</a>
+                        <a class="nav-link" id="miscLink">Non-Academic Projects</a>
                       </li>
                     </ul>
                   </div>
@@ -105,39 +105,32 @@
 I'm also interested in designing and improving solutions for technologically mediated mental health treatment.
   </p>
 
-<h3 class="h3-responsive">Evaluation and Comparison of Usability of Four Mobile Breathing Training Visualizations</h3>
-
-Breath training has been shown to reduce stress and anxiety and improve physiological health. Traditionally, teaching breathing techniques involved in-person guidance or using audio recordings. The increasing prevalence of mobile applications has resulted in many different breathing visualization methods. However, limited work has been done in investigating the effectiveness of these visual representations with respect to breathing guidance. We evaluate four common visual representations of the breath used to teach breathing techniques and investigate the role that auditory guidance plays in users’ experience of these applications. We develop a mobile interface containing these four representations and use a within-subjects approach. Each participant uses four different types of representations, each with and without audio. Then, we interview and survey participants to gather their thoughts on each representation. We identify potential usability issues with the representations and from the data collected, suggest design criteria for future development of app-supported breath training.
-
-
-<h3 class="h3-responsive">An observational and interview-based study of the undergraduate admissions process</h3>
-
-Holistic admissions is a complex and subjective decision making domain in which application readers attempt to identify students who are both capable of succeeding at a university or college and that fit the needs of the institution. A common part of the process is “committee review” where admissions officers discuss the merits of an applicant that may not be a clear admit or reject decision. In this meeting, an admissions officer is typically responsible for “representing” that applicant for the rest of the committee and arguing for admission. From prior studies, we suspected that narrative visualization techniques might be appropriate for this process, thus, we conducted a series of participatory design workshops with admissions officers at the University of Notre Dame to better understand the challenges and opportunities in collecting and presenting evidence as narratives in a typical holistic admissions “committee meeting”. Based on those workshops, we present designs ideas in support of collaborative decision making and storytelling in the holistic admissions domain with a particular emphasis on identifying appropriate narrative visualization genres in support of this process. We also draw parallels to other similar situations where our findings stand to inform the design of software tools in support of collaborative review processes.
-
+    <h2 class="h2-responsive">Publications</h2>
+    <ul>
+      <li><strong>Chuanromanee, T.</strong> & Metoyer, R. (2020). Evaluation and Comparison of Four Mobile Breathing Training Visualizations. <em>2020 International Conference on Healthcare Informatics.</em> Forthcoming.</li>
+      <li>Metoyer, R., <strong>Chuanromanee, T.,</strong> Girgis, G. M., Zhi, Q., & Kinyon, E. (2020). <a href="Papers/CSCW_2020.pdf">Supporting Storytelling with Evidence in Holistic Review Processes: A Participatory Design Approach.</a> <em>Proceedings of the ACM on Human-Computer Interaction,</em> 4(1).</li>
+      <li><strong>Chuanromanee, T. S.,</strong> Cohen, J. I., & Ryan, G. L. (2019). <a href="Papers/MASS.pdf">Morphological Analysis of Size and Shape (MASS): An integrative software program for morphometric analyses of leaves.</a> <em>Applications in Plant Sciences,</em> 7(9), e11288.</li>
+    </ul>
   </section>
 
   <section id="projectsPage" style="display:none">
     <h2 class="h2-responsive">Projects</h2>
-    I've been involved in multiple projects at Kettering University.
-      <h3 class="h3-responsive">MASS: Morphological Analysis of Shape and Size</h3>
-
-      All-in-one image analysis software for quantifying leaf morphology in herbarium sheets. Developed with Dr. Gillian Ryan and Dr. Jim Cohen at Kettering University.
-
-
-
-      <h3 class="h3-responsive">Diagnostic Assistance Software for Mental Health Care Providers</h3>
-
+    <p>
+    I've been involved in multiple computing projects outside of research.
+</p>
+      <strong>Diagnostic Assistance Software for Mental Health Care Providers</strong>
+<p>
       Undergraduate thesis project to assist mental health care providers by developing a neural network that predicts possible diagnoses of mental disorders. Developed using Theano running on top of Keras.
+</p>
 
 
-
-      <h3 class="h3-responsive">Kettering University Open Forum</h3>
-
+      <strong>Kettering University Open Forum</strong>
+<p>
       Campus-wide online forum for students to discuss issues of day-to-day life. Developed in conjunction with Cole Heathcock, Tyler Craig, George Reeves, and Andrew Cicchinelli as part of Web Software Tools term project using HTML/CSS, PHP, and MySQL.
-
+</p>
   </section>
 
-  <section id="writingsPage" style="display:none">
+  <section id="miscPage" style="display:none">
     I also write in my spare time. Here are some articles I've written:
     <ul>
       <li><a href="http://irish4reprohealth.org/2020/02/19/four-lessons-i-learned-from-recovering-from-purity-culture/">Four Lessons I Learned From Recovering from Purity Culture</a> - Irish 4 Reproductive Health Blog</li>
@@ -170,7 +163,7 @@ $('.navbar-nav>li>a').on('click', function(){
   var aboutPage = document.getElementById("aboutPage");
   var researchPage = document.getElementById("researchPage");
   var projectsPage = document.getElementById("projectsPage");
-  var writingsPage = document.getElementById("writingsPage");
+  var miscPage = document.getElementById("miscPage");
 
   var homeLink = document.getElementById("homeLink");
   homeLink.onclick = showHome;
@@ -180,15 +173,15 @@ $('.navbar-nav>li>a').on('click', function(){
   projectsLink.onclick = showProjects;
   var researchLink = document.getElementById("researchLink");
   researchLink.onclick = showResearch;
-  var writingsLink = document.getElementById("writingsLink");
-  writingsLink.onclick = showWriting;
+  var miscLink = document.getElementById("miscLink");
+  miscLink.onclick = showMisc;
 
   function showHome() {
     homePage.style.display = "block";
     aboutPage.style.display = "none";
     researchPage.style.display = "none";
     projectsPage.style.display = "none";
-    writingsPage.style.display = "none";
+    miscPage.style.display = "none";
   }
 
   function showAbout() {
@@ -196,7 +189,7 @@ $('.navbar-nav>li>a').on('click', function(){
     aboutPage.style.display = "block";
     researchPage.style.display = "none";
     projectsPage.style.display = "none";
-    writingsPage.style.display = "none";
+    miscPage.style.display = "none";
   }
 
   function showResearch() {
@@ -205,7 +198,7 @@ $('.navbar-nav>li>a').on('click', function(){
     aboutPage.style.display = "none";
     researchPage.style.display = "block";
     projectsPage.style.display = "none";
-    writingsPage.style.display = "none";
+    miscPage.style.display = "none";
   }
 
   function showProjects() {
@@ -213,16 +206,16 @@ $('.navbar-nav>li>a').on('click', function(){
     aboutPage.style.display = "none";
     researchPage.style.display = "none";
     projectsPage.style.display = "block";
-    writingsPage.style.display = "none";
+    miscPage.style.display = "none";
   }
-  function showWriting() {
+  function showMisc() {
 
       console.log("writings shown")
     homePage.style.display = "none";
     aboutPage.style.display = "none";
     researchPage.style.display = "none";
     projectsPage.style.display = "none";
-    writingsPage.style.display = "block";
+    miscPage.style.display = "block";
   }
 
   /**
