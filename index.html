@@ -23,16 +23,13 @@
                   <div class="navbar-collapse collapse w-100 order-3 dual-collapse2" id="navbarSupportedContent-7">
                     <ul class="navbar-nav ml-auto">
                       <li class="nav-item">
-                        <a class="nav-link" id="aboutLink">About</a>
+                        <a class="nav-link" id="homeLink">Home</a>
                       </li>
                       <li class="nav-item">
                         <a class="nav-link" id="researchLink">Research</a>
                       </li>
                       <li class="nav-item">
                         <a class="nav-link" id="projectsLink">Other Projects</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" id="miscLink">Non-Academic Projects</a>
                       </li>
                     </ul>
                   </div>
@@ -46,7 +43,7 @@
             </nav>
             <!-- Navbar -->
             <!-- Full Page Intro -->
-            <div class="view h-75 rellax" data-rellax-speed="2" style="background-image: url('sea-bg.jpg'); background-repeat: none; background-size: cover; background-position: center center;">
+            <div class="view h-50 rellax" data-rellax-speed="2" style="background-image: url('sea-bg.jpg'); background-repeat: none; background-size: cover; background-position: center center;">
               <!-- Mask & flexbox options-->
               <div class="mask rgba-black-light align-items-center">
                 <!-- Content -->
@@ -55,7 +52,7 @@
                   <div class="row">
                     <!--Grid column-->
                     <div class="col-md-12 mb-3 white-text text-center">
-                      <h1 class="h1-reponsive white-text font-weight-bold mb-0 pt-md-5 pt-5 wow fadeInDown" data-wow-delay="0.3s" id="homeLink"><br /><strong>Tee Chuanromanee</strong></h1>
+                      <h1 class="h1-reponsive white-text font-weight-bold mb-0 pt-md-5 pt-5 wow fadeInDown" data-wow-delay="0.3s"><br /><strong>Tee Chuanromanee</strong></h1>
                       <hr class="hr-light my-4 wow fadeInDown" data-wow-delay="0.4s">
                       <h5 class="text-uppercase mb-4 white-text wow fadeInDown" data-wow-delay="0.4s"><strong>HCI PhD Student</strong></h5>
                       <a class="btn btn-outline-white wow fadeInDown" data-wow-delay="0.4s" href="Resumes_CVs/cv.pdf">CV</a>
@@ -83,17 +80,16 @@
   <p>
     My pronouns are they/them.
   </p>
+
+  <h2 class="h2-responsive">Background</h2>
+  <p>
+    I’m born and raised in Ann Arbor. I went to Milwaukee School of Engineering for one year in undergrad, then Kettering University for the other 3 years. While attending Kettering University, I worked for Bosch for four three-month terms. My previous areas of work include embedded systems, website development and administration, computer vision and image analysis, machine learning, and accounting and bookkeeping.
+  </p>
+  <p>
+    I like to tinker with website and content management (eg. Drupal, Django, JavaScript, VueJS, etc), managing websites for multiple organizations.
+  </p>
   </section>
 
-  <section id="aboutPage" style="display:none">
-    <h2 class="h2-responsive">Background</h2>
-    <p>
-      I’m born and raised in Ann Arbor. I went to Milwaukee School of Engineering for one year in undergrad, then Kettering University for the other 3 years. While attending Kettering University, I worked for Bosch for four three-month terms. My previous areas of work include embedded systems, website development and administration, computer vision and image analysis, machine learning, and accounting and bookkeeping.
-    </p>
-    <p>
-      I like to tinker with website and content management (eg. Drupal, Django, JavaScript, VueJS, etc), managing websites for multiple organizations.
-    </p>
-  </section>
 
   <section id="researchPage" style="display:none">
     <h2 class="h2-responsive">My Research</h2>
@@ -130,12 +126,12 @@ I'm also interested in designing and improving solutions for technologically med
 </p>
   </section>
 
-  <section id="miscPage" style="display:none">
+  <!--<section id="miscPage" style="display:none">
     I also write in my spare time. Here are some articles I've written:
     <ul>
       <li><a href="http://irish4reprohealth.org/2020/02/19/four-lessons-i-learned-from-recovering-from-purity-culture/">Four Lessons I Learned From Recovering from Purity Culture</a> - Irish 4 Reproductive Health Blog</li>
     </ul>
-  </section>
+  </section>-->
 
   <hr>
   <div id="socialLinks">
@@ -160,62 +156,33 @@ $('.navbar-nav>li>a').on('click', function(){
 
   /// Configure different "pages"
   var homePage = document.getElementById("homePage");
-  var aboutPage = document.getElementById("aboutPage");
   var researchPage = document.getElementById("researchPage");
   var projectsPage = document.getElementById("projectsPage");
-  var miscPage = document.getElementById("miscPage");
 
   var homeLink = document.getElementById("homeLink");
   homeLink.onclick = showHome;
-  var aboutLink = document.getElementById("aboutLink");
-  aboutLink.onclick = showAbout;
   var projectsLink = document.getElementById("projectsLink");
   projectsLink.onclick = showProjects;
   var researchLink = document.getElementById("researchLink");
   researchLink.onclick = showResearch;
-  var miscLink = document.getElementById("miscLink");
-  miscLink.onclick = showMisc;
 
   function showHome() {
     homePage.style.display = "block";
-    aboutPage.style.display = "none";
     researchPage.style.display = "none";
     projectsPage.style.display = "none";
-    miscPage.style.display = "none";
-  }
-
-  function showAbout() {
-    homePage.style.display = "none";
-    aboutPage.style.display = "block";
-    researchPage.style.display = "none";
-    projectsPage.style.display = "none";
-    miscPage.style.display = "none";
   }
 
   function showResearch() {
     console.log("research shown")
     homePage.style.display = "none";
-    aboutPage.style.display = "none";
     researchPage.style.display = "block";
     projectsPage.style.display = "none";
-    miscPage.style.display = "none";
   }
 
   function showProjects() {
     homePage.style.display = "none";
-    aboutPage.style.display = "none";
     researchPage.style.display = "none";
     projectsPage.style.display = "block";
-    miscPage.style.display = "none";
-  }
-  function showMisc() {
-
-      console.log("writings shown")
-    homePage.style.display = "none";
-    aboutPage.style.display = "none";
-    researchPage.style.display = "none";
-    projectsPage.style.display = "none";
-    miscPage.style.display = "block";
   }
 
   /**
