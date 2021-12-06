@@ -1,0 +1,122 @@
+{
+	"ID" : {
+		"Name": "John Doe",
+		"Staff": "TBD",
+		"ST_ID": "TBD",
+		"Bin": "Non-select",
+		"ND_ID": "TBD",
+		"CA_ID": "TBD",
+		"Round": "2021 Regular Decision",
+		"CO_ID": 1234567
+	},
+	"Demo" : {
+		"Gender" : "Male",
+		"Race" : "White",
+		"Age": "18",
+		"Religion" : "Roman Catholic",
+		"Visa" : "F",
+		"YIUS" : 17,
+		"YOUS" : 0,
+		"EC" : "F",
+		"EH" : "F",
+		"MD" : "F",
+		"AN" : "F",
+
+		"First_Gen" : "F",
+		"FW" : "F",
+		"DACA" : "F",
+		"US_Citizen" : "T",
+		"Hispanic" : "F",
+		"Multi-App" : "F",
+		"QB" : "F",
+		"CBO" : "F",
+		"OK_PB" : "F"
+	},
+	"High School": {
+		"HS" : "220120 Belmont High School",
+		"Type" : "V1",
+		"City" : "Belmont",
+		"State" : "MA",
+		"N" : "USA",
+		"Geo" : "MA-06 Boston & Cambridge",
+		"GY" : "05/2021"
+	},
+	"Academic" : {
+		"Intent" : "TBD",
+		"ALT" : "TBD",
+		"DEF" : "TBD"
+	},
+	"School Report" : {
+		"%_Rank" : 95,
+		"ER" : 0,
+		"Class_Rank" : "3/77",
+		"Rank_Wt" : "F", 
+		"Rigor" : 5,
+		"#_Sharing_Rank" : 0,
+		"High_GPA" : 4,
+		"GPA_Wt"  : "T",
+		"GPA" : "3.9",
+		"AP_Offering" : 13,
+		"AP_Taken" : 5,
+		"Max_#_AP" : 13,
+		"IB_Diploma" : "F",
+		"IB_Taken" : "None",
+		"IB_Offering" : 0
+	},
+	"ND Relation" : {
+		"UR" : "N/A",
+		"URX" : "N/A",
+		"URX-C": "N/A",
+		"Other-UI" : "N/A",
+		"Legacy" : "N/A",
+		"Other-ND" : "N/A",
+		"Fac/Staff" : "N/A",
+		"ND-Sib" : "N/A",
+		"Seminary" : "N/A",
+		"CSC" : "N/A",
+		"Gateway" : "N/A"
+	},
+
+	"Test Scores" : {
+		"Best" : "N/A",
+		"SAT" : "N/A",
+		"SAT-Date" : "N/A",
+		"SAT-RW" : "N/A",
+		"SAT-Math" : "N/A",
+		"SAT-Subj" : "N/A",
+		"ACT" : "N/A",
+		"ACT-Date" : "N/A",
+		"ACT-Eng" : "N/A",
+		"ACT-Math" : "N/A",
+		"ACT-Read" : "N/A",
+		"ACT-Sci" : "N/A"
+		
+	},
+	"Extra" : {
+		"Sports" : {"Sport": "Lacrosse"},
+		"Activities" : ["Intern", "Class Senator", "Peer Leader", "Tutor"],
+		"Other Attributes" : []
+	},
+
+	"Readers" : [ 
+		{
+			"Name" : " ",
+			"Date" : " ",
+			"CE" : " ",
+			"TE" : " ",
+			"Writing" : " ",
+			"Notes" : "enjoys fishing, interested in opening mind and achieving goals, faith formation",
+			"Ratings" : {
+				"Initials" : " ",
+				"AR" : "3",
+				"NAR" : "5",
+				"Talent" : "4",
+				"Initiative" : "3",
+				"Leadership" : "3",
+				"Excitement" : "3"
+			}
+		}
+	],
+	"Committee" : "Kid's pretty cool."
+
+}
