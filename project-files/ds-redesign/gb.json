@@ -1,6 +1,6 @@
 {
 	"ID" : {
-		"Name": "Andrew Garfield",
+		"Name": "Tobey Macguire",
 		"Staff": "TBD",
 		"ST_ID": "TBD",
 		"Bin": "",
@@ -13,7 +13,7 @@
 		"Gender" : "Male",
 		"Race" : "White",
 		"Age": "18",
-		"Religion" : "Roman Catholic",
+		"Religion" : "Lutheran",
 		"Visa" : "F",
 		"YIUS" : 17,
 		"YOUS" : 0,
@@ -33,32 +33,32 @@
 		"OK_PB" : "T"
 	},
 	"High School": {
-		"HS" : "333905 Regis High School",
-		"Type" : "V1",
-		"City" : "New York",
-		"State" : "NY",
+		"HS" : "100475 Saint Thomas Aquinas High School",
+		"Type" : "",
+		"City" : "Fort Lauderdale",
+		"State" : "FL",
 		"N" : "USA",
-		"Geo" : "NY-27 Manhattan",
-		"GY" : "06/2021"
+		"Geo" : "FL-05 Broward, Martin, & Palm Beach Co",
+		"GY" : "05/2021"
 	},
 	"Academic" : {
-		"Intent" : "Environmental Engineering",
-		"ALT" : "None",
+		"Intent" : "Finance",
+		"ALT" : "Science - Computing",
 		"DEF" : "None"
 	},
 	"School Report" : {
 		"%_Rank" : 0,
-		"ER" : 31,
+		"ER" : 0,
 		"Class_Rank" : "",
 		"Rank_Wt" : "F",
-		"Rigor" : 5,
+		"Rigor" : 3,
 		"#_Sharing_Rank" : 0,
-		"High_GPA" : 3.9820,
-		"GPA_Wt"  : "F",
-		"GPA" : "3.84",
-		"AP_Offering" : 0,
-		"AP_Taken" : 0,
-		"Max_#_AP" : 0,
+		"High_GPA" : 5.2930,
+		"GPA_Wt"  : "T",
+		"GPA" : "4.5",
+		"AP_Offering" : 29,
+		"AP_Taken" : 3,
+		"Max_#_AP" : 29,
 		"IB_Diploma" : "F",
 		"IB_Taken" : "None",
 		"IB_Offering" : 0
@@ -78,12 +78,12 @@
 	},
 
 	"Test Scores" : {
-		"Best" : "1520",
-		"SAT" : "1520",
-		"SAT-Date" : "12/07/2019",
-		"SAT-RW" : "720 12/07/2019",
-		"SAT-Math" : "800 11/02/2019",
-		"SAT-Subj" : "Molecular Biology 760 Mathematics Level I 750 Chemistry 730",
+		"Best" : "N/A",
+		"SAT" : "N/A",
+		"SAT-Date" : "N/A",
+		"SAT-RW" : "N/A",
+		"SAT-Math" : "N/A",
+		"SAT-Subj" : "N/A",
 		"ACT" : "N/A",
 		"ACT-Date" : "N/A",
 		"ACT-Eng" : "N/A",
@@ -94,7 +94,7 @@
 	},
 	"Extra" : {
 		"Sports" : {"Sport": "None"},
-		"Activities" : ["Campus Ministry", "Played Varsity Sport", "Research", "Social Concerns", "Work: Job"],
+		"Activities" : ["Campus Ministry", "Played Varsity Sport", "Student Government"],
 		"Other Attributes" : []
 	},
 
@@ -105,32 +105,15 @@
 			"CE" : " ",
 			"TE" : " ",
 			"Writing" : " ",
-			"Notes" : "Not a standout applicant academically, given average rigor/writing and standard RIC. Solid resume though with some evidence of leadership and service. Pretty good ND desire. RR.",
+			"Notes" : "NAR focuses on hockey. Mixed transcript w/ very light rigor. Not academically competitive. We can let go here.",
 			"Ratings" : {
 				"Initials" : "R1",
-				"AR" : "4",
-				"NAR" : "3",
+				"AR" : "8",
+				"NAR" : "4",
 				"Talent" : "3",
-				"Initiative" : "2",
-				"Leadership" : "2",
-				"Excitement" : "2"
-			}
-		},
-		{
-			"Name" : " ",
-			"Date" : " ",
-			"CE" : " ",
-			"TE" : " ",
-			"Writing" : " ",
-			"Notes" : "As with 0/1/1/0 Bs. resume is fine with leadership and eagle.",
-			"Ratings" : {
-				"Initials" : "R2",
-				"AR" : "4",
-				"NAR" : "3",
-				"Talent" : "3",
-				"Initiative" : "2",
-				"Leadership" : "2",
-				"Excitement" : "2"
+				"Initiative" : "3",
+				"Leadership" : "3",
+				"Excitement" : "3"
 			}
 		}
 	],
