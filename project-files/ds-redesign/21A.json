@@ -1,5 +1,5 @@
 {
-	"ID" : {
+	"ID": {
 		"Name": "Redacted",
 		"Telephone": "Redacted",
 		"Email_Address": "Redacted",
@@ -11,5 +11,38 @@
 		"Advisor_1": "Chawla, Nitesh",
 		"Advisor_2": "Jiang, Meng",
 		"Advisor_3": "Weninger, Tim"
+	},
+	"Demo": {
+		"Gender": "Female",
+		"Race": "Asian",
+		"Religion": "Hindu",
+		"Citizenship_Country": "India",
+		"Other_Language_1": "Malayam",
+		"Other_Language_1_Fluency": "Fluent/Near native",
+		"First_Gen": "F",
+		"Low_Income": "F",
+		"US_Citizen": "F"
+	},
+	"Baccalaureate": {
+		"Institution": "MES Ponnani College",
+		"Degree": "Bachelor of Technology",
+		"Major": "Computer Science and Engineering",
+		"Minor": "",
+		"Overall_GPA": 8.47,
+		"Major_GPA": 8.47,
+		"GPA_Scale": 10,
+		"Attended_From": "07/2011",
+		"Attended_To": "05/2015"
+	},
+	"Graduate": {
+		"Institution": "University of Chicago",
+		"Degree": "M.S. Computer Sci and Engr",
+		"Major": "Computer Science",
+		"Minor": "",
+		"Overall_GPA": 3.73,
+		"Major_GPA": 3.73,
+		"GPA_Scale": 4,
+		"Attended_From": "01/2017",
+		"Attended_To": "03/2018"
 	}
 }
