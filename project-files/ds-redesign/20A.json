@@ -1,0 +1,87 @@
+{
+    "ID": {
+        "Name": "Redacted",
+        "Telephone": "Redacted",
+        "Email_Address": "Redacted",
+        "App_Type": "Degree",
+        "Program": " ",
+        "Area_Of_Study": " ",
+        "Round": "Fall 2020",
+        "CO_ID": 1234,
+        "Advisor_1": "Cleland-Huang, Jane",
+        "Advisor_2": "Brenner, Paul",
+        "Advisor_3": "D'Mello, Sidney"
+    },
+    "Demo": {
+        "Gender": "Female",
+        "Citizenship_Country": "Egypt",
+        "Other_Language_1": "Arabic",
+        "Other_Language_1_Fluency": "Native",
+        "Other_Language_2": "Spanish",
+        "Other_Language_2_Fluency": "Beginner",
+        "Other_Language_3": "French",
+        "Other_Language_3_Fluency": "Beginner",
+        "First_Gen": " ",
+		"Low_Income": " ",
+		"US_Citizen": " "
+    },
+    "Baccalaureate": {
+        "Institution": "Troy University",
+        "Degree": "Bachelor of Sciences",
+        "Major": "Computer Science",
+        "Minor": "Mathematics - Troy University Honors Program",
+        "Overall_GPA": 3.8,
+        "GPA_Scale": 4.0,
+        "Attended_From": "08/2017",
+		"Attended_To": "05/2020"
+    },
+    "Study Abroad": {
+        "Institution": "University of Sköve (HiS) - Sweden",
+        "Major": "Human-Centered Computing",
+        "Attended_From": "08/2019",
+        "Attended_To": "01/2020"
+    },
+    "Recommenders": {
+        "Recommender1" : {"Name": "Redacted",
+						 "Title": "Associate Professor",
+						 "Phone": "Redacted",
+						 "Email": "Redacted"},
+		"Recommender2" : {"Name": "Redacted",
+						 "Title": "Professor and Chair",
+						 "Phone": "Redacted",
+						 "Email": "Redacted"},
+		"Recommender3" : {"Name": "Redacted",
+						 "Title": "Assistant Professor",
+						 "Phone": "Redacted",
+						 "Email": "Redacted"}
+    },
+    "Test Scores" : {
+		"TOEFL_Type" : "IBT",
+		"TOEFL_Speaking" : "24",
+		"TOEFL_Writing" : "27",
+		"TOEFL_Listening" : "25",
+		"TOEFL_Reading" : "28",
+		"TOEFL_Total" : "104"
+	},
+    
+    "Readers" : [
+		{
+			"Name" : " ",
+			"Date" : " ",
+			"CE" : " ",
+			"TE" : " ",
+			"Writing" : " ",
+			"Notes" : " ",
+			"Ratings" : {
+				"Initials" : " ",
+				"AR" : " ",
+				"NAR" : " ",
+				"Talent" : " ",
+				"Initiative" : " ",
+				"Leadership" : " ",
+				"Excitement" : " "
+			}
+		}
+	],
+	"Committee" : " "
+}
