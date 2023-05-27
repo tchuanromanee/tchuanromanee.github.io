@@ -12,6 +12,14 @@ h2 {
   transition-duration: 0.5s;
 }
 
+.hidden {
+  display: none;
+}
+
+.navbar {
+  border-bottom: 1px solid grey;
+}
+
 #socialLinks {
   text-align: center;
 }
