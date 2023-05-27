@@ -5,8 +5,24 @@ body {
   font-size: 14pt;
 }
 
+h2 {
+}
+
+section {
+  transition-duration: 0.5s;
+}
+
 #socialLinks {
   text-align: center;
+}
+
+.profile-img {
+  border-radius: 50%;
+  height: auto;
+  width: 75%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .navbar {
